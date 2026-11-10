@@ -37,11 +37,11 @@ export default function LinkCard({ link, count }: Props) {
         trackClick(link.id);
         setAdded((n) => n + 1);
       }}
-      className="flex w-full items-center rounded-2xl border-2 border-stone-800 bg-white px-4 py-4 text-stone-900 shadow-[3px_3px_0_0_#292524] transition-all hover:-translate-y-0.5 hover:bg-emerald-50 hover:shadow-[5px_5px_0_0_#292524] active:translate-y-0 active:shadow-none dark:border-stone-200 dark:bg-stone-900 dark:text-stone-100 dark:shadow-[3px_3px_0_0_#e7e5e4] dark:hover:bg-stone-800"
+      className="flex w-full items-center rounded-3xl border border-white/70 bg-white/45 px-5 py-4 text-stone-800 shadow-[0_1px_2px_rgba(120,72,40,0.05),0_10px_30px_-14px_rgba(120,72,40,0.3)] backdrop-blur-xl transition duration-300 ease-out outline-none hover:-translate-y-px hover:bg-white/65 hover:shadow-[0_1px_2px_rgba(120,72,40,0.06),0_14px_34px_-14px_rgba(120,72,40,0.38)] focus-visible:ring-2 focus-visible:ring-orange-300/70 active:translate-y-0 dark:border-white/10 dark:bg-white/5 dark:text-stone-100 dark:shadow-[0_10px_30px_-14px_rgba(0,0,0,0.6)] dark:hover:bg-white/10"
     >
-      <span className="w-14 shrink-0" aria-hidden />
-      <span className="flex-1 text-center font-semibold">{link.title}</span>
-      <span className="w-14 shrink-0 text-right text-xs text-stone-500 dark:text-stone-400">
+      <span className="w-12 shrink-0" aria-hidden />
+      <span className="flex-1 text-center text-[15px] font-semibold">{link.title}</span>
+      <span className="w-12 shrink-0 text-right text-xs text-stone-400 tabular-nums dark:text-stone-500">
         {shown !== undefined ? `${shown.toLocaleString()}회` : ""}
       </span>
     </a>

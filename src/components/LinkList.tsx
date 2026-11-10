@@ -10,7 +10,7 @@ type Props = {
 
 export default function LinkList({ links, counts }: Props) {
   return (
-    <ul className="flex w-full flex-col gap-10">
+    <ul className="flex w-full flex-col gap-4">
       {links.map((link) => (
         <li key={link.id}>
           <LinkCard link={link} count={counts ? (counts[link.id] ?? 0) : undefined} />

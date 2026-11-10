@@ -11,9 +11,9 @@ export type Profile = {
 };
 
 export const profile: Profile = {
-  name: "임준호",
-  bio: "바이브코더",
-  image: "/profile.jpg", // 사진: Jerry Adney / Unsplash (https://unsplash.com/photos/_WiFMBRT7Aw)
+  name: "임개발",
+  bio: "풀스택 개발자|요즘에는 AI개발에 관심이 많아요",
+  image: "https://placehold.co/150x150/orange/white",
 };
 
 export const links: LinkItem[] = [
